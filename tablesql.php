@@ -1,5 +1,5 @@
 <?php
-$pdo = new pdo ("mysql:host=localhost;dbname=hw", "root", "985958");
+$pdo = new pdo ("mysql:host=localhost;dbname=hw;charset=UTF8", "root", "985958");
 $sth = $pdo->prepare('SELECT * FROM books');
 $sth->execute();
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
